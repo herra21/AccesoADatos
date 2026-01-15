@@ -1,3 +1,6 @@
+import dao.DepartamentoDAOImp;
+import dao.EmpleadoDAOImp;
+import dao.PerfilDAOImp;
 import model.Direccion;
 import model.Empleado;
 import model.Habitacion;
@@ -10,8 +13,12 @@ public class Main {
 
     public static void main(String[] args) {
         //INSERT INTO empleados (nombre, apellido, correo, salario) VALUES ('', 1000)
-        Empleado empleado = new Empleado("Sarita", "Gonsales", "sara@correo.com", 1700, new Direccion("Illescas", "Toledo", "c/Holanda, 49"), "becaria");
-
+        //Empleado empleado = new Empleado("Sarita", "Gonsales", "sara@correo.com", 1700, new Direccion("Illescas", "Toledo", "c/Holanda, 49"), "becaria");
+        //PerfilDAOImp perfilDAOImp = new PerfilDAOImp();
+        //perfilDAOImp.getUsuariosPerfil(2);
+        DepartamentoDAOImp departamentoDAOImp = new DepartamentoDAOImp();
+        departamentoDAOImp.empleadosPorNombreDepartamento("Hosteleria");
+        /*
         // 1 -> Crear una sesion factory
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         // 2 -> Crear la sesion
@@ -39,5 +46,6 @@ public class Main {
         // 6 -> cierra fujos de datos
         session.close();
         sessionFactory.close();
+         */
     }
 }

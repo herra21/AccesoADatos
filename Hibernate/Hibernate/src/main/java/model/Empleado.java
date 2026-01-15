@@ -25,6 +25,12 @@ public class Empleado {
     private Direccion direccion;
     @Transient
     private String categoria;
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_perfil")
+    private Perfil perfil;
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_departamento")
+    private Departamento departamento;
 
     public Empleado(String nombre, String apellido, String mail, int salario, Direccion direccion, String categoria) {
         this.nombre = nombre;
