@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="fondoAplicacion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblGestionLigas" layoutX="277.0" layoutY="118.0" text="GESTIÓN DE EQUIPOS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="49.0" />
+         </font>
+      </Label>
+      <Button id="btnCrearEquipo" fx:id="btnCrearEquipo" layoutX="226.0" layoutY="263.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="122.0" styleClass="botonSecundario" stylesheets="@../css/estilos.css" />
+      <Label layoutX="209.0" layoutY="401.0" text="CREAR EQUIPO">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button id="btnEditarEquipo" fx:id="btnEditarEquipo" layoutX="487.0" layoutY="260.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="128.0" styleClass="botonSecundario" stylesheets="@../css/estilos.css" />
+      <Label layoutX="453.0" layoutY="401.0" text="EDITAR EQUIPOS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button id="btnBorrarEquipo" layoutX="732.0" layoutY="263.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="128.0" styleClass="botonSecundario" stylesheets="@../css/estilos.css" />
+      <Label layoutX="698.0" layoutY="401.0" text="ELIMINAR EQUIPOS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button id="btnBuscarJugaores" layoutX="224.0" layoutY="474.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="128.0" styleClass="botonSecundario" stylesheets="@../css/estilos.css" />
+      <Label layoutX="159.0" layoutY="618.0" text="MOSTRAR JUGADORES">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="641.0" text="EN UN EQUIPO">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button id="btnMostrarEquiposEnLiga" layoutX="476.0" layoutY="474.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="128.0" styleClass="botonSecundario" stylesheets="@../css/estilos.css" />
+      <Label layoutX="416.0" layoutY="618.0" text="MOSTRAR DATOS DE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="641.0" text="TODOS LOS EQUIPOS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button id="btnCrearEquipo" fx:id="btnFicharJugadores" layoutX="735.0" layoutY="477.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="122.0" styleClass="botonSecundario" stylesheets="@../css/estilos.css" />
+      <Label layoutX="698.0" layoutY="618.0" text="FICHAR JUGADORES">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

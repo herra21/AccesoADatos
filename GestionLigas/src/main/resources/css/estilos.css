@@ -1,0 +1,54 @@
+#fondoAplicacion{
+    -fx-background-color: #CCCCCC
+}
+
+.botonPrincipal {
+    -fx-background-color: #80BDFF;
+    -fx-border-radius: 5px;
+    -fx-color: white;
+}
+
+.botonSecundario {
+    -fx-background-color: transparent;
+}
+
+.botonAceptar {
+    -fx-background-color: #78FF4F;
+}
+
+.botonVolver{
+    -fx-background-color: #FF5F40;
+}
+
+
+#btnCrearLiga, #btnCrearEquipo, #btnCrearEntrenador {
+    -fx-background-image: url("../img/crearLigas.png");
+}
+
+#btnAnadirEquiposALigas {
+    -fx-background-image: url("../img/anadirEquiposALigas.png");
+}
+
+#btnEditarLigas, #btnEditarEquipo {
+    -fx-background-image: url("../img/editarLigas.png");
+}
+
+#btnBorrarLigas, #btnBorrarEquipo {
+    -fx-background-image: url("../img/borrarLigas.png");
+}
+
+#btnInfoLigas {
+    -fx-background-image: url("../img/infoLigas.png");
+}
+
+#btnBuscarJugaores {
+    -fx-background-image: url("../img/buscarJugadores.png");
+}
+
+#btnMostrarEquiposEnLiga {
+    -fx-background-image: url("../img/mostrarEquiposEnLiga.png");
+}
+
+#btnAnadirEntrenador {
+    -fx-background-image: url("../img/anadirEntrenador1.png");
+}

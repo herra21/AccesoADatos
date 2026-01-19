@@ -171,6 +171,20 @@ public class LibroController {
         System.out.print("Introduce el ID del libro a eliminar: ");
         int id = teclado.nextInt();
         libroDAOIMP.eliminarLibroPorId(id);
+        eliminarOtroLibro();
+    }
+
+    private void eliminarLibroPorNombre(){
+        System.out.print("Introduce el nombre del libro a eliminar: ");
+        String nombrelibroAEliminar = teclado.nextLine();
+        libroDAOIMP.eliminarLibroPorNombre(nombrelibroAEliminar);
+        eliminarOtroLibro();
+    }
+
+    public void eliminarOtroLibro(){
+
+        boolean opcionCorrecta;
+
         System.out.print("¿Desea dar de baja otro libro? (Si/No): ");
         String opcion = teclado.next();
         do {
@@ -189,16 +203,6 @@ public class LibroController {
                     opcionCorrecta = false;
             }
         }while(!opcionCorrecta);
-    }
-
-    private void eliminarLibroPorNombre(){
-        System.out.print("Introduce el nombre del libro a eliminar: ");
-        String libroAEliminar = teclado.nextLine();
-
-
-
-
-
     }
 
     private void eliminarLibroPorISBN(){

@@ -76,6 +76,7 @@ public class LibroDAOIMP implements LibroDAO{
         session = new Configuration().configure().buildSessionFactory().openSession();
         transaction = session.beginTransaction();
         Query<Libro> query = session.createQuery("FROM Libro e WHERE e.titulo = :tituloArgs", Libro.class);
+        query.setParameter("tituloArgs", titulo);
     }
 
     @Override

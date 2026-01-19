@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="fondoAplicacion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="158.0" layoutY="101.0" text="GESTIÓN DE LIGAS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="198.0" text="MOSTRAR EQUIPOS EN UNA LIGA">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="158.0" layoutY="281.0" text="SELECCIONE UNA LIGA DISPONIBLE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSeleccionLiga" layoutX="478.0" layoutY="278.0" prefHeight="34.0" prefWidth="200.0" />
+      <TableView layoutX="153.0" layoutY="327.0" prefHeight="322.0" prefWidth="819.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

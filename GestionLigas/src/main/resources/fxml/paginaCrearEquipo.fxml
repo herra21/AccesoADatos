@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="fondoAplicacion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="142.0" layoutY="113.0" text="GESTIÓN DE EQUIPOS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="184.0" text="CREAR EQUIPO">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="142.0" layoutY="266.0" text="NOMBRE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNombreEquipo" layoutX="340.0" layoutY="263.0" prefHeight="34.0" prefWidth="200.0" />
+      <Label fx:id="lblNombre1" layoutX="142.0" layoutY="322.0" text="CIUDAD">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCiudad" layoutX="340.0" layoutY="319.0" prefHeight="34.0" prefWidth="200.0" />
+      <Label fx:id="lblNombre11" layoutX="142.0" layoutY="378.0" text="CORRESPONDE A LIGA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="340.0" layoutY="379.0" prefHeight="34.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

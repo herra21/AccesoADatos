@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="fondoAplicacion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaginaInicioController">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="104.0" layoutX="49.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/liga.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="79.0" text="LIGA DE FUTBOL DE LA UNIVERSIDAD EUROPEA 2026">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="104.0" layoutX="172.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/jugador.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="104.0" layoutX="305.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/equipos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="104.0" layoutX="449.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/entrenador.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnGestionEquipos" layoutX="297.0" layoutY="250.0" mnemonicParsing="false" styleClass="botonPrincipal" stylesheets="@../css/estilos.css" text="Gestión de Equipos" />
+      <Button fx:id="btnGestionJugadores" layoutX="159.0" layoutY="250.0" mnemonicParsing="false" styleClass="botonPrincipal" stylesheets="@../css/estilos.css" text="Gestión de Jugadores" />
+      <Button fx:id="btnGestionLigas" layoutX="51.0" layoutY="250.0" mnemonicParsing="false" onAction="#onGestionLigas" styleClass="botonPrincipal" stylesheets="@../css/estilos.css" text="Gestión de Ligas" />
+      <Button fx:id="btnGestionEntrenadores" layoutX="427.0" layoutY="250.0" mnemonicParsing="false" styleClass="botonPrincipal" stylesheets="@../css/estilos.css" text="Gestión de Entrenadores" />
+   </children>
+</AnchorPane>
